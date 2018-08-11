@@ -1,0 +1,14 @@
+syntax = "proto3";
+package nodeservice;
+
+service NodeService {
+    rpc Ping (PingRequest) returns (PingReply) {}
+}
+
+message PingRequest {
+    string message = 1;
+}
+
+message PingReply {
+    string message = 1;
+}
